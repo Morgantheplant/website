@@ -1,0 +1,173 @@
+body {
+    text-align: center;
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    line-height: 1.4em;
+    background: #eaeaea;
+    color: #4d4d4d;
+    width: 550px;
+    margin: 0 auto;
+    perspective:350px;
+    -webkit-perspective: 350px;
+    -moz-perspective: 350px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    opacity: 1
+    transition: opacity 1000ms;
+}
+
+body:unresolved {
+    opacity: 0;
+}
+
+.wrapper{
+    position: relative;
+}
+
+#info {
+    margin: 65px auto 0;
+    color: #a6a6a6;
+    font-size: 12px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+.typewriter {
+    position:relative;
+}
+
+.typewriter-paper-container {
+    height:200px;
+    width: 196px;
+    margin: 2px auto;
+    position:relative;
+}
+
+.typewriter-paper {
+    background-color: white;
+    box-shadow: 0px -1px 2px black;
+    position: absolute;
+    width: 155px;
+    font-family: monospace;
+    font-size: 8px;
+    text-align: left;
+    padding: 10px 19px 10px 19px;
+    line-height: 12px;
+    -webkit-transition: top 0.3s, left 0.3s, height 0.3s;
+            transition: top 0.3s, left 0.3s, height 0.3s;
+    background-image: -webkit-linear-gradient(white, white, white, white, gray, black);
+    background-image: linear-gradient( white,white,white,white, gray, black );
+}
+
+.typewriter-carriage {
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: top 0.3s, left 0.3s;
+            transition: top 0.3s, left 0.3s;
+}
+
+.keyboard-container {
+    position: absolute;
+    height: 203px;
+    width: 326px;
+    top: 45px;
+    left: 111px;
+    -webkit-transform: rotateX(58deg);
+            transform: rotateX(58deg);
+    webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;     
+    -webkit-user-select: none;     
+            user-select: none; 
+}
+
+img.base {
+    height:70%;
+    width:70%;
+}
+
+.keyboard-container p {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.keyboard-key {
+    height: 20px;
+    width: 18px;
+    line-height: 20px;
+    margin-right: 5px;
+    background: #EDEAEA;
+    display: inline-block;
+    border-radius: 3px;
+    -webkit-transition: translate .3s, background-color 0.1s;
+            transition: translate .3s, background-color 0.1s;
+    cursor:pointer;
+}
+
+.keyboard-key-pressed {
+  background-color: #ADADAD;
+}
+
+.keyboard-key-shift {
+    width: 50px;
+}
+
+.keyboard-spacebar {
+    position: absolute;
+    bottom: 25px;
+    width: 38%;
+    left: 171px;
+    cursor: pointer;
+    -webkit-transition: trasform 0.2s, bottom 0.2s ease-out;
+            transition: trasform 0.2s, bottom 0.2s ease-out;
+}
+
+.keyboard-spacebar-pressed {
+    bottom: 20px;
+    -webkit-transform: rotateX(5deg);
+            transform: rotateX(5deg);
+}
+
+footer img {
+    height: 75px;
+    width:75px;
+    margin:10px;
+    cursor:pointer;
+}
+
+.footer-delete-icon {
+    position:absolute;
+    right:100px;
+    -webkit-transition: -webkit-transform 0.2s, width 0.2s, height 0.2s;
+            transition: transform 0.2s, width 0.2s, height 0.2s;
+}
+
+.footer-delete-icon:hover {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+    height:80px;
+    width:80px;
+}
+
+.footer-pages-icon {
+    left: 100px;
+    position:absolute;
+    -webkit-transition: -webkit-transform 0.2s, width 0.2s, height 0.2s;
+            transition: transform 0.2s, width 0.2s, height 0.2s;
+}
+
+.footer-pages-icon:hover {
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+    height:80px;
+    width:80px;
+}
+
+.footer-github-icon{
+    position:absolute;
+    left:230px;
+    -webkit-transition: -webkit-transform 0.2s, width 0.2s, height 0.2s;
+            transition: transform 0.2s, width 0.2s, height 0.2s;
+}

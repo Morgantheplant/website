@@ -1,0 +1,8 @@
+<h1>Adding a Surface</h1>
+<p>In Famo.us, a surface often adds a visible component to an otherwise invisible entity. You can think of a surface as a <i>&lt;div&gt;</i> element that you can attach to any entity. A surface can contain several attributes including size, context, and properties (among others). Click on the links below to learn more about each.</p> 
+
+<p><a href="" ng-click="clicked('size')"><b>Size</b></a><span ng-show="data.size">- By default the size of your surface will be the size of your entity, but they don’t necessarily need to be the same. If you think of your entity as a pane of glass then your surface would be a sticker on that glass. The size attribute takes an array of two values for height and width (X and Y). If a value is set to ‘undefined’ then it is interpreted as the full height or width of its containing entity.</span></p> 
+
+<p><a href=""  ng-click="clicked('content')"><b>Content</b></a><span ng-show="data.content"> - The content is where your actual HTML code will live. It can be any text or HTML markup listed as a string. Generally if your markup isn’t going to be individually animated then it can all live in a single surface. You can add multiple elements to the content including nested or sibling elements.</span></p>
+
+<p><a href=""  ng-click="clicked('properties')"><b>Properties</b></a><span ng-show="data.properties"> - The properties attribute contains all of the CSS styles that are applied to the context. This attribute takes an object with any number of CSS properties and values. The object’s keys are CSS properties listed in camel case with hyphens omitted and its values are the corresponding CSS values listed as strings.</span></p> 

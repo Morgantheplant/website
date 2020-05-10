@@ -145,7 +145,7 @@ function startCamera(){
         navigator[validNavigatorPrefix]({video: true}, 
             function(localMediaStream) {
                 var video = document.querySelector('video');
-                video.src = window.URL.createObjectURL(localMediaStream);
+                video.srcObject = localMediaStream;
                 // video.onloadedmetadata = function(e) {
                 // // Ready to go. Do some stuff.
                 // };

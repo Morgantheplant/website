@@ -1,0 +1,122 @@
+body {
+ text-align: center;
+ font-family: verdana;
+ font-size: 14px;
+ background-color: rgb(201,201,201);
+ 
+}
+
+.clicker div {
+ cursor:pointer;
+}
+
+.player {
+height: 250px;
+background-color: white;
+margin-top: 180px;
+position: absolute;
+width: 98%;
+}
+
+.PlayerView {
+height: 85px;
+width: 70px;
+background-color:blue;
+float: right;
+margin-right: 5em;
+text-align: center;
+border-radius: 5px;
+padding-top:5px;
+}
+
+.AppView {
+height: 65px;
+width:100px;
+background-color:red;
+margin: 0px auto 0px;
+margin-top: 30px;
+border-radius: 5px;
+padding-top:5px;
+}
+
+.AppModel {
+height: 75px;
+width: 60%;
+background-color:green;
+margin: auto;
+margin-top: 30px;
+border-radius: 5px;
+padding-top:5px;
+}
+
+.SongQueue {
+height: 130px;
+width: 100px;
+background-color:yellow;
+float: left;
+margin-left: 5em;
+margin-top: 15px;
+clear: both;
+border-radius: 5px;
+}
+.SongQueueView {
+height: 130px;
+width:100px;
+background-color:teal;
+float: left;
+margin-top: 15px;
+margin-left: 20px;
+border-radius: 5px;
+}
+.SongModel {
+height: 35px;
+width: 90px;
+margin: auto;
+background-color: orange;
+margin-top: 5px;
+border-radius: 5px;
+padding-top:5px;
+margin-bottom:5px;
+}
+
+.LibraryEntryView, .SongQueueEntryView {
+height: 35px;
+width: 90px;
+margin: auto;
+background-color: lime;
+margin-top: 5px;
+border-radius: 5px;
+padding-top:5px;
+margin-bottom:5px;
+}
+
+.SongCollection {
+margin-top:15px;
+height: 130px;
+width: 100px;
+background-color:purple;
+float: right;
+margin-right: 5em;
+border-radius: 5px;
+}
+.LibraryView {
+margin-top:15px;
+height: 130px;
+width:100px;
+background-color:gray;
+float: right;
+margin-right: 20px;
+border-radius: 5px;
+}
+
+img {
+display: inline-block;
+position:absolute;
+top:0px;
+left:200px;
+}
+
+audio {
+display: block;
+margin: 10px 0px 5px 10px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test Editor</title>
+	<style type="text/css" media="screen">
+	  body {
+	      overflow: hidden;
+	  }
+
+	  #editor {
+	      margin: 0;
+	      position: absolute;
+	      top: 0;
+	      bottom: 0;
+	      left: 0;
+	      right: 0;
+	  }
+	</style>
+</head>
+<body>
+<pre id="editor">
+
+var makeLinkedList = function(){
+  var list = {};
+  list.head = null;
+  list.tail = null;
+
+  list.addToTail = function(value){
+    var node = makeNode(value);
+    if(list.head === null) {
+      list.head = node;
+    }
+    if (list.tail !== null) {
+      list.tail.next = node;
+      node.previous = list.tail;
+    }
+    list.tail = node;
+  };
+
+
+
+  list.addToHead = function(value){
+    var node = makeNode(value);
+    if(list.tail === null) {
+      list.tail = node;
+    }
+    if (list.head === null) {
+      list.head = node;
+    }
+    list.head.previous = node;
+    node.next = list.head;
+    list.head = node;
+  };
+
+  list.removeHead = function(){
+    var header = list.head.value;
+    list.head = list.head.next;
+    return  header;
+  };
+
+  list.removeTail = function() {
+    var tailValue = list.tail.value;
+    list.tail = list.tail.previous;
+    return tailValue;
+  };
+
+  list.contains = function(target){
+    var contains = false;
+    var search = function(node){
+      if (node.value === target){
+        contains = true;
+      }
+
+      if(node !== list.tail) {
+        search(node.next);
+      }
+
+    };
+    search(list.head);
+    return contains;
+  };
+    return list;
+};
+
+
+var makeNode = function(value) {
+  var node = {};
+
+  node.value = value;
+  node.next = null;
+  node.previous = null;
+  return node;
+};
+
+/*
+ * Complexity: What is the time complexity of the above functions?
+ */
+
+
+
+
+
+</pre>
+
+<script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/twilight");
+    editor.getSession().setMode("ace/mode/javascript");
+</script>
+
+</body>
+</html>

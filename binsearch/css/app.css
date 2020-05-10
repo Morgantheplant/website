@@ -1,0 +1,117 @@
+html {
+    background: #404040;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'AvenirNext-Medium';
+}
+
+.mainPanel {
+    background-color: #f2f2f0;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #000000;
+    height:250px;
+    width:130px;
+    margin-left:9px;
+    margin-top:9px;
+	font-family: 'verdana';
+    z-index: 100;
+}
+
+.targetNumberText {
+    font-size: 11px;
+    font-family:'verdana';
+}
+
+.checkingIndex {
+    font-size: 36px;
+}
+
+.messagePanel{
+    background-color: gray;
+    background-image: linear-gradient( to top right, gray, #616161);
+}
+
+.messagePanelText{
+    font-size: 16px;
+    text-align: center;
+    font-family: verdana;
+    font-weight: bold;
+    padding-top: 163px;
+}
+
+.messageLogPanel {
+    background-color: #f2f2f0;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #000000;
+    margin:15px;
+    padding: 15px;
+    font-family: 'verdana';
+    height: 65px;
+}
+
+.messageLogTitle {
+    /*background-color: #f2f2f0;*/
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #000000;
+    margin:30px 9px 9px 9px;
+    /*padding: 25px 2px 2px 2px;*/
+    font-family: 'lobster';
+    /* font-family:'AvenirNextLTW02-Regular, sans-serif;';*/
+    height: 60px;
+    width:200px;
+}
+
+input[type="range"] {
+    width: 60px;
+    margin: 5px 0px 9px 5px; 
+}
+
+.settings{
+     color: rgb(227, 221, 216);
+     font-size: 10px;
+     margin: 8px 0px 0px 20px;
+     font-family: 'verdana';
+     width: 87px;
+
+}
+
+#minSquares {
+width: 77px;
+height:19px;
+border-radius: 5px;
+margin-top: 5px;
+background-color: darkgrey;
+}
+
+#midValue{
+  font-family: 'lobster';
+  font-size:19px;
+}
+
+#modalText {
+margin-top: 10px;
+margin-left: 15px;
+margin-right:15px;
+font-family: verdana;
+background-color: #f2f2f0;
+color: #000000;
+padding: 1px 6px 0px 16px;
+height: 255px;
+width: 545px;
+border-radius: 10px;
+font-size: 12px;
+text-align: left;
+line-height: 1.5;
+box-shadow: 1px 1px 10px #000000;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Date The City</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc= sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Londrina+Outline' rel='stylesheet' type='text/css'>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+	<style>
+	@media screen and (min-width:768px){
+    .navbar-brand-centered {
+      position: absolute;
+      left: 50%;
+      display: block;
+      width: 273px;
+      text-align: center;
+    }
+    .navbar>.container .navbar-brand-centered, 
+    .navbar>.container-fluid .navbar-brand-centered {
+  	  /* offset logo image to center*/
+      margin-left: -137px;
+      color:black;
+	  }
+	}
+	    
+	   
+	
+    
+  img.logo{
+    height:75px;
+      /* image not quite symmetrical*/
+    margin-left: -5px;
+    margin-top: -5px !important;
+  }
+
+	.navbar-nav li {
+		text-align:center;
+		font-family: Lato;
+		color: black;
+		width:75px;
+	}
+
+	.navbar a {
+		color: black;
+		font-weight: bold;
+		font-size: 10px;
+	}
+
+	nav.navbar.navbar-default {
+		background-color: white;
+		margin-bottom: 0px;
+	}
+
+	.city {
+		margin-top: 90px;
+	  background-image: url('./images/city1.gif');
+    background-size: cover;
+    height: 300px;
+    text-align:center;
+	}
+
+	.city p {
+		color:white;
+    font-family: Open Sans Condensed, Lato;
+    font-style: italic;
+    font-size: 43px;
+	}
+
+	.descriptions {
+		text-align: center;
+		margin-bottom: 70px;
+	}
+
+	.assets {
+    height: 300px;
+    background-size: cover;
+  }
+
+  .asset1 {
+  	background-image: url('./images/asset1.jpg');
+  }
+
+  .asset2 {
+  	background-image: url('./images/asset2.jpg');
+  }
+
+  .asset3 {
+  	background-image: url('./images/asset3.jpg');
+  }
+
+	.description-elements {
+		height:200px;
+		line-height: 12px;
+		padding-top: 100px;
+	}
+
+	.text {
+		font-family: Lato;
+		font-size:16px;
+	}
+
+  .load-more button {
+  	width:95%;
+  	border: none;
+  	font-weight: bold;
+  	font-family: Londrina Outline;
+  	font-size: 25px;
+  	transition: ;
+  }
+
+  .load-more button:hover {
+   background-color: gray;
+  }
+
+  .load-more {
+  	margin-top: 20px;
+  	margin-bottom: 20px;
+  	padding-top: 10px;
+  	padding-bottom:  10px;
+  	text-align: center;
+  }
+
+  .social-icons i {
+    margin:5px;
+    cursor:pointer;
+  }
+
+  footer {
+  	text-align: center;
+  }
+
+  .content {
+  	height:300px;
+  }
+  
+    /* styles when nav collapsed */
+	@media only screen and (max-width: 768px) {
+    
+    .navbar-nav li {
+	    width:200px;
+    }
+
+    .descriptions {
+    	margin-bottom: 0px;
+    }
+
+    img.logo{
+      height:50px;
+      margin-top: -17px !important;
+      margin-left: 0px;
+      padding-top: 5px;
+      padding-left: 5px
+    }
+
+
+    
+    #navbar-brand-centered ul {
+     	margin:0px;
+    }
+
+    #navbar-brand-centered li{
+    	text-align:center;
+    	margin: 0px auto;
+    }
+
+    .description-elements {
+			height: 90px;
+      padding: 22px;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+	  }
+    
+    .content {
+    	height: 600px;
+	    margin-bottom: 10px;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+      padding-bottom: 20px;
+    }
+
+	  .city {
+	  	padding-bottom: 0px;
+	  	margin-bottom: 0px;
+	  	margin-top: 50px;
+	  }
+	}
+
+	@media (min-width: 768px){
+		.navbar .container {
+      width: 600px;
+    }
+  }
+  
+
+
+
+
+  @media(max-width: 255px){
+  	img.logo{
+      width:100%;
+      height:auto;
+      margin-left: 10px
+    }
+    .navbar-brand.navbar-brand-centered {
+        width: 50%;
+    }
+  }
+
+	</style>
+</head>
+<body>
+  <nav class="navbar navbar navbar-default navbar-fixed-top" role="navigation">
+	  <div class="container">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <div class="navbar-brand navbar-brand-centered">
+	        <a href="#/"><img class="logo" src="./images/dtc.png"></a>
+	      </div>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="navbar-brand-centered">
+	      <ul class="nav navbar-nav">
+	        <li><a href="#">NIGHTS OUT</a></li>
+	        <li><a href="#">STUFF YOU NEED</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="#">SOCIAL</a></li>
+	        <li><a href="#">CONTACT</a></li>		        
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+  <div class="jumbotron city">
+    <div class="container">
+  		<p class="main-quote" >"A city is only as big<br /> as you <br/> want to make"</p>
+  	</div>
+  </div>
+  
+  <div class="container descriptions">
+    <div class="row">
+      <div class="col-sm-4 description-elements"><p><i class="fa fa-cutlery"></i></p><p>Food</p></div>
+      <div class="col-sm-4 description-elements"><p><i class="fa fa-glass"></i></p><p>Drink</p></div>
+      <div class="col-sm-4 description-elements"><p><i class="fa fa-map-o"></i></p><p>Fun Stuff</p></div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row content"> 
+  	<div class="col-sm-5 assets asset1"></div>
+  	<div class="col-sm-7 text"><h2>This is a heading</h2> Bacon ipsum dolor amet doner pastrami salami frankfurter. Meatball fatback brisket chuck, cupim boudin tail bresaola. Meatloaf bacon tri-tip sirloin. Frankfurter chuck shank ribeye, tail sausage shoulder hamburger corned beef capicola filet mignon pastrami meatloaf spare ribs venison.</div>
+    </div>
+     <div class="row content"> 
+  	<div class="col-sm-7 text"><h2>This is a heading</h2>
+Bacon ipsum dolor amet doner pastrami salami frankfurter. Meatball fatback brisket chuck, cupim boudin tail bresaola. Meatloaf bacon tri-tip sirloin. Frankfurter chuck shank ribeye, tail sausage shoulder hamburger corned beef capicola filet mignon pastrami meatloaf spare ribs venison. </div>
+  	<div class="col-sm-5 assets asset2"></div>
+    </div>
+     <div class="row content"> 
+  	<div class="col-sm-5 assets asset3"></div>
+  	<div class="col-sm-7 text"> <h2>This is a heading</h2> Bacon ipsum dolor amet doner pastrami salami frankfurter. Meatball fatback brisket chuck, cupim boudin tail bresaola. Meatloaf bacon tri-tip sirloin. Frankfurter chuck shank ribeye, tail sausage shoulder hamburger corned beef capicola filet mignon pastrami meatloaf spare ribs venison.</div>
+    </div>
+  </div>
+  <div class="container load-more"><button> LOAD MORE </button></div>
+  <footer class="container">
+    <div class="footer-width">
+      <div class="col-sm-4">About</div>
+      <div class="col-sm-4">Contact</div>
+      <div class="col-sm-4"><p>Social</p><p class="social-icons"><i class="fa fa-facebook-square"></i><i class="fa fa-twitter-square"></i><i class="fa fa-instagram"></i></p></div>
+    </div>
+  </footer>
+</body>
+</html>

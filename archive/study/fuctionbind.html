@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test Editor</title>
+	<style type="text/css" media="screen">
+	  body {
+	      overflow: hidden;
+	  }
+
+	  #editor {
+	      margin: 0;
+	      position: absolute;
+	      top: 0;
+	      bottom: 0;
+	      left: 0;
+	      right: 0;
+	  }
+	</style>
+</head>
+<body>
+<pre id="editor">
+
+/*
+ * function bind():
+ *
+ * example 1:
+ *
+ * var alice = {
+ *   name: 'alice',
+ *   shout: function(){
+ *     alert(this.name);
+ *   }
+ * }
+ * var boundShout = bind(alice.shout, alice);
+ * boundShout(); // alerts 'alice'
+ * boundShout = bind(alice.shout, {name: 'bob'});
+ * boundShout(); // alerts 'bob'
+ *
+ * example 2:
+ *
+ * var func = function(a, b){ return a + b };
+ * var boundFunc = bind(func, null, 'foo');
+ * var result = boundFunc('bar');
+ * result === 'foobar'; // true
+ *
+*/
+
+var bind = function(func, bindObj) {
+  var prevArgs = Array.prototype.slice.call(arguments, 2);
+   console.log(prevArgs)
+   return function() { 
+  	  var args = Array.prototype.slice.call(arguments);
+      args = prevArgs.concat(args);
+   	  return func.apply(bindObj, args);
+  }
+  // TODO: Your code here
+};
+
+/*
+ * Function.prototype.bind:
+ *
+ * example 1:
+ *
+ * var alice = {
+ *   name: 'alice',
+ *   shout: function(){
+ *     alert(this.name);
+ *   }
+ * }
+ * var boundShout = alice.shout.bind(alice);
+ * boundShout(); // alerts 'alice'
+ * boundShout = alice.shout.bind({name: 'bob'});
+ * boundShout(); // alerts 'bob'
+ *
+ * example 2:
+ *
+ * var func = function(a, b){ return a + b };
+ * var boundFunc = func.bind(null, 'foo');
+ * var result = boundFunc('bar');
+ * result === 'foobar'; // true
+ *
+*/
+
+Function.prototype.bind = function(context) {
+  //this
+  var prevArgs = Array.prototype.slice.call(arguments,1)
+  var fn = this;
+  return function(){
+    var args = Array.prototype.slice.call(arguments);
+    args = prevArgs.concat(args);
+  	return fn.apply(context, args);
+  }
+  // TODO: Your code here
+};
+
+
+
+</pre>
+
+<script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/twilight");
+    editor.getSession().setMode("ace/mode/javascript");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>MORGAN PLANT | 2013 PROJECTS</title>
+        <meta name="description" content="Morgan Plant's digital portfolio">
+        <meta name="viewport" content="width=device-width">
+<link rel="icon" 
+
+      type="image/png" 
+      href="../images/faviconmp.png">
+
+		<LINK REL="SHORTCUT ICON" HREF="../images/favicon.ico" /> 
+        <link rel="stylesheet" href="../stylenew.css">
+ 		<link href='http://fonts.googleapis.com/css?family=Hammersmith+One|Oswald|Open+Sans' rel='stylesheet' type='text/css'>
+
+    </head> 
+<body id="otherpages">	
+	  <div id="wrapsku">
+	  <aside id="top_contact">
+				<div id="sku_contact"><ul>
+				<li><a href="http://www.linkedin.com/pub/morgan-plant/4b/431/34" title="Add me on Linked In!" class="linkedin"><!--<img src="images/linkedin.png" alt="Linked In" id="linkedinicon" />--></a></li>
+				<li><span class="emailme"><a href="http://morgantheplant.com/#contact" title="Contact Me!" class="scroll"></a></span> <!--<img src="images/email.png" alt="Email Morgan" id="emailicon" />--></li>
+				</ul></div>
+			</aside>
+		  <header id="main_header">
+				<div id="skutitle">
+				<ul>
+					<li><a href="http://morgantheplant.com" id="hometitle"><img src="../images/mpbig.png" alt="Morgan Plant" class="mp" /></li>
+					<li><h1 class="title">MORGAN PLANT</h1></li></ul></a>
+				<img src="../images/hr.png" id="hr_sku" alt="line!" />
+				<div id="notab">NOTABLE 2013 PROJECTS</div>
+			</header>
+			
+					<h1 id="skuheader">THE IMAGE GRABBER</h1>
+					<div id="nav_buttons">
+					<ul>
+					
+					<li><a href="http://morgantheplant.com/skuexploder" class="pgnav"></a></li>
+					<li><a href="http://morgantheplant.com/bestsellerws" class="pgnav"></a></li>
+					<li><a href="http://morgantheplant.com/imagegrabber" id="pgnav_active" ></a></li>
+					<li><a href="http://morgantheplant.com/stockmodels" class="pgnav"></a></li>
+					<li><a href="http://morgantheplant.com/autotemplates" class="pgnav"></a></li>
+					</ul>
+					</div>
+					<br />
+					<b>Problem solved</b> – <i>Takes a SKU, finds its image location and then imports it for easy use with reports.</i><br /><br />
+					<div id="imggrab"><img src="../images/imagegrabber.jpg" id="imagegrabber" alt="Best Sellers" /></div>
+					<br /><br />
+			
+					<div class="skuarticle"><p id ="skumaintext">
+					<b>ABOUT:</b> Before I built this tool there was no quick way 
+					to view an image for a given SKU. Image requests would be sent to our 
+					web team who would look for the file scattered among thousands of folders on the server 
+					and then send it back via email. Frustrated with this lengthy process I sat down with 
+					our web team and mapped out where and how each image was saved on the server.
+					Using this info I wrote a function that builds an image path based on the SKU and when
+					it was uploaded. I then added a button that uses this path to import the image in the 
+					adjacent row. Later I added two more VBAs to select and delete all the 
+					photos for easier use with reports.<br /><br />
+					
+					<b>FORMAT:</b> First SKUs are pasted into the grey column under <b>ENTER SKU HERE:</b>
+					In column C an image path is displayed so the user can manually grab an image or 
+					find the alt images for a given SKU. The path is built using a VLOOKUP to an external file that lists the upload date 
+					for each SKU. Using this date the function concatenates a path in this format: <br /><br />
+					<b id="path"><small>Z:\snap\<span id="red">(year uploaded)</span> + -shared\ <span id="red">(upload date)</span>\COMPLETE\<span id="red">(SKU without spaces)</span> + _ + <span id="red">(SKU color)</span> +.jpg</small></b>
+					<br /><br />
+					In the next column a “GRAB!” button is assigned to a VBA that uses the path 
+					in column C to import the image. Below this button conditional formatting checks if the SKU 
+					format is valid, and prompts an error if not. Additionally if the image is not found when the 
+					button is pressed an alert box will notify the user.<br /><br />
+					Column F is where the image appears after the grab button is pressed. 
+					The image height is set to the row height and it is imported as a linked image. 
+					This allows you to resize the image without losing image quality.
+					Two other buttons assigned to VBAs were added to help clear and select images. 
+					This was added since you cannot highlight multiple 
+					images using the rectangular Marquee as you would with text or tables.<br /><br />
+
+					</div> 
+					</p>
+
+
+
+
+
+ 
+
+
+					
+					<a href="http://www.morgantheplant.com" class="morgmail"alt="Click Here to Go Back!"></a>
+					<br /><span id="toppersku"><a href="http://morgantheplant.com" class="">Go Back to my Home Page</a></span>
+<br /><br />
+<footer id="main_footer">
+			<a href="http://www.morgantheplant.com/#contact" onclick="window.open('https://www.sitelock.com/verify.php?site=morgantheplant.com','SiteLock','width=600,height=600,left=160,top=170');" >
+			<img id="sitelock" alt="website security" title="SiteLock"  src="//shield.sitelock.com/shield/morgantheplant.com"/></a>
+		<br />Website Created by Morgan with HTML5 & CSS3 
+		</footer>
+</div>
+ </body>

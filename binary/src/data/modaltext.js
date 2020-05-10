@@ -1,0 +1,4 @@
+define(function(require, exports, module) {
+  var text = "<div id='modalText'><h2>Binary Numbers</h2><p>How do you count using only 1's and 0's? The answer is with binary numbers! Unlike the base 10 decimal system that we normally use, the binary system increases by the power of 2 with each additional digit.</p><p>This visualization represents a <b>BYTE</b> of binary numbers or the traditional number of digits needed by a computer to encode a single character. Each of the 8 digits or <b>BITS</b> is represented by a colorful card. Notice how each card increases by the power of 2 as you move to the left and how the sum of the cards corresponds to a number. In total, a byte can represent 256 values from 0 to 255. Click the 'Start Counter' to see binary counting in action or enter a number to see its binary equivalent!</p></div>";
+  module.exports = text
+})
