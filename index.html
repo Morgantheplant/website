@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Morgan Plant's iPhone</title>
+        <link rel="icon" href="favicon.ico?v=1" type="image/x-icon">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <style>
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+            }
+            body {
+                position: absolute;
+                -webkit-transform-style: preserve-3d;
+                transform-style: preserve-3d;
+                -webkit-font-smoothing: antialiased;
+                -webkit-tap-highlight-color: transparent;
+                -webkit-perspective: 0;
+                perspective: 1000;
+                /*overflow: hidden;*/
+                font-family: Arimo,Droid Sans, sans-serif;
+                -moz-user-select: none; 
+                -khtml-user-select: none; 
+                -webkit-user-select: none; 
+                -o-user-select: none; 
+                background:black;
+            }
+
+            .text {
+                font-size: 12px
+            }
+            
+          /*   {
+                margin-top:55px;
+                margin-left: 40px;
+                margin-right: 10px
+            }*/
+
+            #modal_text_container {
+                height:90%;
+                margin:4em;
+                overflow:scroll;
+                -webkit-overflow-scrolling: touch;
+            
+            }
+
+            #modal_text_container a {
+                color:teal;
+                text-decoration: none;
+            }
+
+            #modal_text_container img {
+                width:100%;
+                max-width: 350px;
+            }
+
+            .closer {
+                color: white;
+                font-size: 26px;
+                cursor:pointer;
+             /*   margin:20px;
+                padding:20px;*/
+            }
+            .modal {
+
+                -webkit-overflow-scrolling: touch;
+            }
+
+
+            #myimage {
+               margin:10px;
+               height:80%;
+               width:auto;
+            }
+
+            #image_input {
+                margin:20px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <script>
+        function updateImage(input) {
+            var file = input.files[0];
+            var imgURL = URL.createObjectURL(file)
+            document.querySelector('#myimage').src = imgURL;
+        }
+
+        </script>
+        <script src="public/bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <head>
+    <meta charset="UTF-8">
+    <script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="data/data.js"></script>
+    <script src="models/SongModel.js"></script>
+    <script src="collections/Songs.js"></script>
+    <script src="collections/SongQueue.js"></script>
+    <script src="models/AppModel.js"></script>
+    <script src="views/PlayerView.js"></script>
+    <script src="views/LibraryView.js"></script>
+    <script src="views/LibraryEntryView.js"></script>
+    <script src="views/SongQueueView.js"></script>
+    <script src="views/SongQueueEntryView.js"></script>
+    <script src="views/AppView.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css"></link>
+    <link rel="stylesheet" href="scripts/jquery-ui-1.11.1.custom/jquery-ui.css"></link>
+    <script src="scripts/jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
+    </head> 
+    <body>
+      <title>MY TUNES VISUALIZED</title>
+      <div class="clicker">
+        <div class="PlayerView">Player View</div>
+        <div class="AppView">App View</div>
+        <div class="AppModel">App Model</div>
+        <div class="SongQueue"><div class="SongModel">Song</div>Song Queue</div>
+        <div class="SongQueueView"><div class="SongQueueEntryView">Song Queue Entry View</div>Song Queue View</div>
+        <div class="SongCollection"><div class="SongModel">Song</div>Song Collection</div>
+        <div class="LibraryView"><div class="LibraryEntryView">Library Entry View</div>Library View</div>
+        <!--<div class="SongCollection">Song Collection</div>--!>
+      </div>
+      <br>
+      <section class="player"><img class="main" src="" />
+      <script>
+      $(function(){
+        // set up model objects
+        var library = new Songs(songData);
+        var app = new AppModel({library: library});
+
+        // build a view for the top level of the whole app
+        var appView = new AppView({model: app});
+
+        // put the view onto the screen
+        $('.player').append(appView.render());
+      });
+      </script>
+      </section>
+      <script src="images.js"></script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+html {
+    background: #404040;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'AvenirNext-Medium';
+}
+
+.navButton:hover {
+  text-decoration: 'underline';
+  box-shadow:'inset 0 0 5px #000000';
+}
+
+#modalText {
+margin-top: 10px;
+margin-left: 15px;
+margin-right:15px;
+font-family: verdana;
+background-color: #f2f2f0;
+color: #000000;
+padding: 1px 6px 0px 16px;
+height: 255px;
+width: 545px;
+border-radius: 10px;
+font-size: 12px;
+text-align: left;
+line-height: 1.5;
+box-shadow: 1px 1px 10px #000000;
+}
+
+#modalText p {
+padding-right:10px;
+}
+
+.fa {
+  font-size: 50px;
+  line-height: 1.25;
+}
+
+/*#modalText h1 {
+  font-size:;  
+}*/

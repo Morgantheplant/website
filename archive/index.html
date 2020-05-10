@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html class="no-js"> 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>MORGAN PLANT | BUYER EXTRORDINAIRE & ONLINE MARKETING GURU</title>
+        <meta name="description" content="Morgan Plant's digital portfolio">
+        <meta name="viewport" content="width=device-width">
+		<meta name="sitelock-site-verification" content="3909" />
+<link rel="icon" 
+      type="image/png" 
+      href="images/faviconmp.png">
+
+		<LINK REL="SHORTCUT ICON" HREF="images/favicon.ico" /> 
+        <link rel="stylesheet" href="style.css">
+ 		<link href='http://fonts.googleapis.com/css?family=Hammersmith+One|Oswald|Open+Sans' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+	
+	 <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+ 
+	$(".scroll").click(function(event){		
+		event.preventDefault();
+	$('html,body').animate({scrollTop:$(this.hash).offset().top+(-50)}, 500);
+	});
+});
+
+function toggleNext3(el,tname,first) {
+	var abscn="abs";
+	var selcn="selected";
+	var next=el.nextSibling;
+	var tags=el.parentNode.getElementsByTagName(tname);
+	while(next.nodeType != 1) next = next.nextSibling;
+	next.style.display=((next.style.display=="none") ? "block" : "none");
+	var rE = new RegExp("(^|\\s)" + abscn + "(\\s|$)");
+	if (rE.test(next.className)==false) {next.className+=" "+abscn;}
+	if (first!=1){
+		for (i=0; i<tags.length; i++) {
+			var tohide=tags[i].nextSibling;
+			while(tohide.nodeType != 1) tohide = tohide.nextSibling;
+			if (tohide!=next){tohide.style.display="none";}
+			tags[i].className=tags[i].className.replace(new RegExp(selcn+"\\b"), "");
+			if (tags[i]==el && next.style.display=="block"){
+				var rEx = new RegExp("(^|\\s)" + selcn + "(\\s|$)");
+				if (rEx.test(tags[i].className)==false) {tags[i].className+=" "+selcn;}
+			}
+		}
+	}
+}
+
+function toggleNextByIdAndTag3(el,tname) {
+	var ccn="clicker";
+	clickers=document.getElementById(el).getElementsByTagName(tname);
+	for (i=0; i<clickers.length; i++) {
+		clickers[i].className+=" "+ccn;
+		clickers[i].onclick=function() {toggleNext3(this,tname)}
+		toggleNext3(clickers[i],tname,1);
+	}
+}
+
+window.onload=function(){toggleNextByIdAndTag3('dlist','dt')}
+
+
+
+</script>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/lightbox.js"></script>
+<link href="css/lightbox.css" rel="stylesheet" />
+
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+		<div id="big_wrapper">
+		<aside id="top_contact">
+				<ul>
+				<li><a href="http://www.linkedin.com/pub/morgan-plant/4b/431/34" title="Add me on Linked In!" class="linkedin"><!--<img src="images/linkedin.png" alt="Linked In" id="linkedinicon" />--></a></li>
+				<li><span class="emailme"><a href="#contact" title="Contact Me!" class="scroll"></a></span> <!--<img src="images/email.png" alt="Email Morgan" id="emailicon" />--></li>
+				</ul>
+			</aside>
+		  <header id="main_header">
+				<ul>
+					<li><a href="" id="hometitle"><img src="images/mpbig.png" alt="Morgan Plant" class="mp" /></li>
+					<li><h1 class="title">MORGAN PLANT</h1></li></ul></a>
+						<h2 class="title">BUYER EXTRAORDINAIRE // ONLINE MARKETING GURU</h2>
+				<img src="images/hr.png" id="hr" alt="Click the side nav below" />
+			</header>
+			
+			
+		<nav class="main_menu">
+			<ul>
+				<li class="buying"><a class="scroll" href="#buying">BUYING</a></li>
+				<li class="marketing"><a class="scroll" href="#marketing">MARKETING</a></li>
+				<li class="other"><a class="scroll" href="#other">OTHER PROJECTS</a></li>
+				<li class="contact"><a class="scroll" href="#contact">CONTACT</a></li>
+				<li class="other"><a class="scroll" href="http://www.morgantheplant.com/blog/" target="_blank">BLOG</a></li>
+				
+			</ul>
+		</nav>
+		<section id="main_section">
+			<a href="" class="morg"></a>
+			<article>
+				
+				<p id="start"><span id="first_letter">T</span>oday Ecommerce is big business and knowing its 
+				details takes a diverse and evolving skill set. Below are several projects that demonstrate 
+				my knowledge for this growing market and my ability to cater to its demands. Currently I
+				work as an associate buyer for the top online surf retailer in the USA, SWELL.com.
+ 
+				</p>
+				
+				
+				<header><h1><img src="images/mp.png" id="buying"/> BUYING</h1></header>
+				
+				<p>Buying for an online retailer requires meticulous 
+				planning and product knowledge to keep up with the 24/7 nature of the internet. 
+				Since we do not physically see our customers or our merchandise, we are 
+				constantly analyzing raw data to make informed buying descisions. With nearly five years in the industry, I know how to recognize key metrics both good and bad and, more importantly, I know how to react to them.</p>   
+				
+			<p><span id="bolded1">NOTABLE 2013 PROJECTS:</span><br /><br />
+				<div id ="toggle">
+				These Excel projects were built to save time and make use of the data from our sales reports and servers. 
+				I built all of these worksheets to streamline mindless tasks and more effectively turn a profit.
+					<ul class="bullets">
+						<span id="extralink"> 
+										<a href="http://morgantheplant.com/skuexploder" class="fancybox fancybox.iframe" title="Notable Projects"><li class="centerhand">SKU EXPLODER</li></a> 
+										<a href="http://morgantheplant.com/bestsellerws" class="fancybox fancybox.iframe" title="Notable Projects"><li class="centerhand">Best Seller Worksheet</li></a>
+										<a href="http://morgantheplant.com/imagegrabber" class="fancybox fancybox.iframe" title="Notable Projects"><li class="centerhand">Image Grabber</li></a>
+										<a href="http://morgantheplant.com/stockmodels" class="fancybox fancybox.iframe" title="Notable Projects"><li class="centerhand">Stock Model Generater</li></a>
+										<a href="http://morgantheplant.com/autotemplates" class="fancybox fancybox.iframe" title="Notable Projects"><li class="centerhand">Auto Templates</li></a>
+						</span>
+					</ul>
+				</div>
+				</p>
+				<br />	
+				
+				<span id="bolded1">PAST EXPERIENCE: </span> + <br /><br />
+				<div id ="toggle">
+			<iframe src="http://infogr.am/Gear-Section-Sales" width="660" height="634" scrolling="no" frameborder="0" style="border:none;" id="bid" ></iframe>
+				<a href="#buying" id="graphs"><a/><div class="sectional"><div id="toggle">I began buying for SWELL's gear section in 2010. In two years I helped more than triple net sales to almost 3/4 of a million dollars.
+				<br />
+				<br />Although my budget remained relatively small, careful product selection, merchandizing and inventory management helped me dramatically increase sales in all my assigned <a href="images/GearCatGrowth.png" rel="lightbox" title="Gear Categories from 2010 - 2012" class="cat">Categories</a>.
+				<!-- <br /><br /><a href="images/GearCatGrowth.png" rel="lightbox" title="Gear Catagories" ><img src="images/gear.jpg" style="width: 660px;" alt="gear" /></a>In addition to increasing sales, Morgan also mastered the inventory management software and built a dynamic SKU building tool to increase productivity for the entire buying team.   
+				--><br /><br /><span id="bigger">You can view the full assortment at: </span><a href="http://www.swell.com/gear" target="_blank" class="inpage"> SWELL.com/gear</a>
+				</div>
+				<br /><br />
+				<span id="bolded1">MERCHANDIZING EXPERIENCE: </span> +<br /><br />
+				<div id ="toggle">
+				
+				<div data-configid="7598493/1781683" class="issuuembed"></div><script type="text/javascript" src="http://e.issuu.com/embed.js" async="true"></script>
+				
+				<br />
+				<br />
+				<span class="bolded">SWELL PRINT CATALOG</span><span class="notes">CIRCULATION +350K</span><br /><br />
+							Currently I help select and merchandize product for the SWELL print catalogs.  For many of these pages I use <a href="https://kuler.adobe.com" target="_blank" class="inpage">Adobe
+							Kuler</a> to make sure product layout is pleasing to the eye. Above is a lookbook of various catalog spreads from the 2012 that were based around color.
+						<br /><br />
+					<span class="bolded">WEB ENHANCEMENTS</span><br /><br />
+						After looking at in page analytics, customer  reviews, and ecommerce competitors, I streamlined the gear section for a better user experience. Some of these web enhancements include:
+					<ul class="bullets">
+						<a href="images/categoryupdates.png" rel="lightbox" title="Gear Category Updates" class="listy"><li class="centerhand">Revamped outdated categories</li></a>
+						<a href="images/embedvids.png" rel="lightbox" title="YouTube Video Embedded in Product" class="listy"><li class="centerhand">Added trailers to DVDs and Wetsuits</li></a>
+						<a href="images/wetsuitthickness.png" rel="lightbox" title="Wetsuit Thickness Attribute" class="listy"><li class="centerhand">Added suit Thickness filter to all Wetsuits</li></a>
+						<a href="images/fintype.png" rel="lightbox" title="Fin Type Attribute" class="listy"><li class="centerhand">Added Fin Type filter to all surfboard fins</li></a>
+					</ul>
+					<br /><br />
+					<b>You can view the current SWELL catalog at:</b> <a href="https://www.swell.com/catalog" alt="SWELL Catalog" class="inpage">SWELL.com/catalog</a>
+					</div>
+				</div>
+			<span id="toppers"><a href="#main_header" class="scroll">top</a></span>
+				
+				<header><h1><img src="images/mp.png" id="marketing"/> MARKETING</h1></header>
+				
+				<img src="images/content.gif" alt="content marketing" id="CM" /><br /><br />
+				
+				In online retail more traffic means more conversions. One of the best ways 
+				to drive traffic is by creating compelling content or CONTENT MARKETING. While many 
+				marketers stress its importance, few actually know how to build engaging content on a consistent basis. The projects below demonstrate my ability to churn out consisent content on multiple customer touchpoints that target customers and drive sales.<br /><br
+				<br /><br />
+				<span id="bolded1">SEO COPYWRITING: </span> +<br /><br />
+				<div class="sectional"><div id ="toggle"><a href="#copy" class="typewriter"></a>
+				
+				My time as a copywriter was brief, but impactful. From 2010 until 2012 I contributed as a regular author on the SWELL blog and wrote hundreds of product descriptions for multiple online storefronts. 
+				<br /><br />
+				<span class="bolded">SWELL BLOG</span> <span class="notes">AUGUST 2010 - NOV 2012</span>
+				<br /><br />
+				Even though my authorship has slowed, my blog posts continue to drive thousands of visitors to SWELL. Many of these articles targeted long tail keywords that are rich in SEO value and remain high in organic Google ranking. Today if you look at the hundreds of posts dating back to 2010, my articles still lure in more traffic than most sponsored and promoted articles. My SEO Copywriting achievements include:
+				  <ul class="bullets">
+				<br /><br /><a href="images/Blogarticlestop5.png" rel="lightbox" title="Blog Analytics from BLOG.SWELL.COM" class="listy">
+							<li class="centerhand">Authored 3 out of the Top 5 Most Visited Posts</li></a> 
+							<a href="images/Blogarticlestop15.png" rel="lightbox" title="Blog Analytics from BLOG.SWELL.COM" class="listy"><li class="centerhand">Authored 7 out of the Top 15 Most Visited Posts</li></a>
+					</ul>
+					<br /><br />
+					
+					<b>You can view all of my blog articles here: <a href="http://blog.swell.com/author/mplant/" class="inpage" target="_blank"> blog.swell.com/author/mplant/</a></b>
+					</div>
+				
+				<br /><br />
+				<span id="bolded1">VIDEO: </span> +<br /><br />
+					<div class="sectional2">
+					<div id ="toggle">
+										<a class="fancybox fancybox.iframe" id="clickarrow" rel="fav" href="http://www.youtube.com/embed/FAUA1tMYdrE?autoplay=1&wmode=opaque"><!--<img class="clickarrow" src="images/clickthearrows.png" />--></a>
+										<br /><br />
+
+						I helped launch a video marketing campaign with a small team and limited resources. Equipped with a 7D, a GoPro and a lot of ambition, I shot and edited 65 videos for SWELL in a little over a year. 
+						<br /><br />
+						Although video marketing has been put on hold, the videos continue to gain views and remain as valuable, searchable assets online. Today the, “How to Put Surfboard Racks on Your Car” video alone has gained over 18K views. Click on the box above to see select videos or check out my full YouTube video catalog below. 
+								<br /><br />
+						<span class="bolded">MORGAN'S YOUTUBE VIDEO CATALOG:</span>
+						<dl id="dlist">
+						<dt class="clicker">How-To’s</dt>
+						<dd style="display: none;" class="abs">
+								<div class="vidcat">
+								<b>The How-To's:</b> These videos were targeted towards various keywords. They were also used to supplement blog posts and generate buzz on social media platforms.
+								 The <i>How to Put Soft Surfboard Racks on a Car</i> continues to be one of the most watched videos on SWELL's YouTube channel with nearly 18K views.</b></span>
+								<br /><br />
+								<ul>
+									<li>
+									<a href="http://www.youtube.com/embed/8jY5t26naV8?autoplay=1&wmode=opaque" rel="fav" class="fancybox fancybox.iframe" title="How to Put Soft Surfboard Racks on a Car - SWELL">
+										<img src="images/videothumbs/howto/howto1.jpg" /><strong>How to Put Soft Surfboard Racks on a Car - SWELL</strong>
+									</a>
+									17,787 views | 1 year ago
+									</li>
+									<br /><br />
+									<li>
+										<a href="http://www.youtube.com/embed/LTOuU_q71HA?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" rel="fav" title="Pilates for Surfers - Surf Training &amp; Conditioning - SWELL">
+										<img src="images/videothumbs/howto/howto2.jpg" /><strong>Pilates for Surfers - Surf Training &amp; Condition...</strong>
+										</a>
+										4,337 views | 1 year ago
+									</li>
+									<br /><br />
+									<li>
+									<a href="http://www.youtube.com/embed/kFb5iijvB3k?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="How To Make an Irish Car Bomb - SWELL">
+									<img src="images/videothumbs/howto/howto3.jpg" /><strong>How To Make an Irish Car Bomb - SWELL</strong>
+									</a>
+									2,855 views | 1 year ago
+									</li>
+									<br /><br />
+									<li>
+									<a href="http://www.youtube.com/embed/yXzTOPAbtcI?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="How To: Beachy Hair - Tips from SWELL's Stylist">
+									<img src="images/videothumbs/howto/howto4.jpg" /><strong>How To: Beachy Hair - Tips from SWELL's Stylist</strong>
+									</a>
+										1,965 views | 1 year ago
+									</li>
+									<br /><br />
+									<li>
+									<a href="http://www.youtube.com/embed/Q6T6oqfYkFE?autoplay=1&wmode=opaque"  rel="fav" class="fancybox fancybox.iframe" title="Make-up Tips from SWELL's Makeup Artist">
+									<img src="images/videothumbs/howto/howto5.jpg" /><strong>Make-up Tips from SWELL's Makeup Artist</strong>
+									</a>
+									1,480 views | 1 year ago
+									</li>
+									<br /><br />
+									
+								</ul>
+								</div>
+						</dd>
+
+						<dt class="clicker">Behind the Scenes</dt>
+						<dd style="display: none;" class="abs">
+								<div class="vidcat">
+								<b>Behind the Scenes:</b> All of these videos were shot on location at the SWELL catalog photo shoots. Since the catalog is the company's biggest sales driver, these videos were meant to add excitement around the catalog drop and give another perspective to SWELL’s iconic imagery.  
+								<br /><br />
+									<ul>
+									<li>
+										<a href="http://www.youtube.com/embed/FAUA1tMYdrE?autoplay=1&wmode=opaque" rel="fav" class="fancybox fancybox.iframe" title="Behind The Scenes: Spring/Summer 12' Catalog">
+										<img src="images/videothumbs/bts/bts1.jpg" /><strong>Behind The Scenes: Spring/Summer 12' Catalog</strong>
+										</a>
+										2,166 views | 11 months ago
+									</li>
+									<br /><br />
+									<li>
+										<a href="http://www.youtube.com/embed/PGxlnz9LC4s?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Chad Tim Tim @ The SWELL Spring 2012 Photoshoot">
+										<img src="images/videothumbs/bts/bts2.jpg" /><strong>Chad Tim Tim @ The SWELL Spring 2012 Photoshoot</strong>
+										</a>
+										970 views | 1 year ago
+									</li>
+									<br /><br />
+									<li>
+									<a href="http://www.youtube.com/embed/wmaGS-YQOCc?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Style Advice from a SWELL Model -Sydney">
+										<img src="images/videothumbs/howto/howto6.jpg" /><strong>Style Advice from a SWELL Model -Sydney</strong>
+									</a>
+									603 views | 1 year ago
+									</li>
+									<br /><br />
+									<li>
+												<a href="http://www.youtube.com/embed/hsr0Xun1074?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Winter Shoe Trends From SWELL's Buyer Hannah">
+												<img src="images/videothumbs/interviews/interview7.jpg" /><strong>Winter Shoe Trends From SWELL's Buyer Hannah</strong>
+												</a>
+												25 views | 1 year ago
+											</li>
+											<br /><br />
+											<li>
+												<a href="http://www.youtube.com/embed/fr3-u48wj6g?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Man Style from a Pro - Ryah Arthur - SWELL">
+												<img src="images/videothumbs/interviews/interview8.jpg" /><strong>Man Style from a Pro - Ryah Arthur - SWELL</strong>
+												</a>
+												154 views | 1 year ago
+											</li>
+									<li>
+										<a href="http://www.youtube.com/embed/atf7qjQYs6g?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Billabong Girls Behind the Scenes Photoshoot 2010">
+										<img src="images/videothumbs/bts/bts3.jpg" /><strong>Billabong Girls Behind the Scenes Photoshoot 2010</strong>
+										</a>
+										729 views | 2 years ago
+									</li>
+									</ul>
+								</div>
+
+
+						</dd>
+
+						<dt class="clicker">Interviews</dt>
+							<dd style="display: none;" class="abs"> 
+									<div class="vidcat"><ul>
+										<b>Interviews:</b> Candid interviews were taken to personalize the company and add a bit of context to some of SWELL’s key players. I came up with the idea for the Meet the Models mini-series after reading postive customer feedback about the models. I interviewed the models on location during their shoots and later edited the footage for use on the SWELL Blog and Facebook.
+										<br /><br />
+											<li>
+												<a href="http://www.youtube.com/embed/yzGvdlScels?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="SWELL - Meet The Models: Natazha">
+												<img src="images/videothumbs/interviews/interviewnat.jpg" /><strong>SWELL - Meet The Models: Natazha</strong>
+												</a>
+												3,287 views | 1 year ago
+											</li>
+											<br /><br />
+											<li>
+												<a href="http://www.youtube.com/embed/E7MjAkOip6w?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="SWELL - Meet The Models - Tayler @ the Fall 2011 In Studio Photoshoot">
+												<img src="images/videothumbs/interviews/interview1.jpg" /><strong>SWELL - Meet The Models - Tayler @ the Fall 201...</strong>
+												</a>
+												720 views | 1 year ago
+											</li>
+											<br /><br />
+											<li>
+												<a href="http://www.youtube.com/embed/dTY3QfUyPDM?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="SWELL - Meet the Models: Sydney @ the In Studio FALL 2011 Photoshoot">
+												<img src="images/videothumbs/interviews/interview2.jpg" /><strong>SWELL - Meet the Models: Sydney @ the In Studio...</strong>
+												</a>
+												698 views | 1 year ago
+											</li>
+											<br /><br />
+											<li>
+												<a href="http://www.youtube.com/embed/vlAaAYLudcg?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="L*SPACE INTERVIEW - MONICA WISE : SNEAK PEEK AT SPRING SWIM">
+												<img src="images/videothumbs/interviews/interview3.jpg" /><strong>L*SPACE INTERVIEW - MONICA WISE : SNEAK PEEK AT...</strong>
+												</a>
+												360 views | 1 year ago
+											</li>
+											<br /><br />
+											<li>
+												<a href="http://www.youtube.com/embed/T8h8NIyMPBk?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Is Mexico Dangerous?"><img src="images/videothumbs/interviews/interview5.jpg" /><strong>Is Mexico Dangerous?</strong></a>
+												2,505 views | 1 year ago
+											</li>
+											<br /><br />
+											<li>
+												<a href="http://www.youtube.com/embed/n2VDdQs6DLw?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Matt Kurvin - Interview">
+												<img src="images/videothumbs/interviews/interview6.jpg" /><strong>Matt Kurvin - Interview</strong></a>
+												105 views | 9 months ago
+											</li>
+										
+										</ul>
+									</div>
+
+							</dd>
+
+						<dt class="clicker">Events</dt>
+							<dd style="display: none;" class="abs">
+								<div class="vidcat">
+									<b>Events:</b> These videos served as both branding and entertainment. Events help keep the company connected to the surf industry and lend a sense of authenticity to the website. I attended many events equipped with a camera to show the lighter side of the company.  
+									<br /><br />
+									<ul>
+									<li>
+											<a href="http://www.youtube.com/embed/MxsLLnVy53E?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="SWELL - International Surfing Day 2011 - South Bay to South of the Border">
+												<img src="images/videothumbs/events/event7.jpg" /><strong>SWELL - International Surfing Day 2011 - South ...</strong>
+											</a>
+											758 views | 1 year ago</li>
+											<br /><br />
+										
+										<li>
+											<a href="http://www.youtube.com/embed/r6-Q39PKNmE?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="BILLABONG's 2011 Design For Humanity w/ SWELL - Edward Sharpe and the Magnetic Zeros">
+												<img src="images/videothumbs/events/event8.jpg" /><strong>BILLABONG's 2011 Design For Humanity w/ SWELL -...</strong>
+											</a>
+											210 views | 1 year ago</li>
+											<br /><br />
+										
+										
+										<li>
+											<a href="http://www.youtube.com/embed/Yz7GELHf30Y?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Surf Trip to Rosarito Beach w/ SWELL - Baja California MEXICO!">
+												<img src="images/videothumbs/events/event6.jpg" /><strong>Surf Trip to Rosarito Beach w/ SWELL - Baja Cal...</strong>
+											</a>
+											239 views | 1 year ago</li>
+										
+										
+										<br /><br />
+										<li>
+											<a href="http://www.youtube.com/embed/dxVl_pbNzd8?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="SWELL Employee Halloween Party">
+											<img src="images/videothumbs/events/event2.jpg" /><strong>SWELL Employee Halloween Party</strong></a>
+											153 views | 1 year ago</li>
+										<br /><br />
+										
+										
+										<li>
+											<a href="http://www.youtube.com/embed/yAKWU6aUpUI?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Holiday Party at SWELL - CASINO NIGHT">
+												<img src="images/videothumbs/events/event4.jpg" /><strong>Holiday Party at SWELL - CASINO NIGHT</strong>
+											</a>
+											134 views | 1 year ago</li>
+											<br /><br />
+										
+										<li>
+											<a href="http://www.youtube.com/embed/LhqDMQ7gwDY?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Aloha Friday at the Surfing Heritage Foundation">
+												<img src="images/videothumbs/events/event5.jpg" /><strong>Aloha Friday at the Surfing Heritage Foundation</strong>
+											</a>
+											70 views | 1 year ago</li>
+											<br /><br />
+											
+										<li>
+											<a href="http://www.youtube.com/embed/axORlmy-WCI?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Sean Collins Memorial Paddle Out Huntington Beach - SWELL">
+												<img src="images/videothumbs/events/event3.jpg" /><strong>Sean Collins Memorial Paddle Out Huntington Bea...</strong>
+											</a>
+											574 views | 1 year ago</li>
+											<br /><br />
+										
+										<li>
+										<a href="http://www.youtube.com/embed/BmJgUPJM5iA?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="SWELL @ the 2011 OC Brew Ha Ha - 2nd Annual / Best Beer Festival">
+											<img src="images/videothumbs/events/event9.jpg" /><strong>SWELL @ the 2011 OC Brew Ha Ha - 2nd Annual / B...</strong>
+										</a>
+										343 views | 1 year ago
+										
+										</li>
+										<br /><br />
+											<li>
+											<a href="http://www.youtube.com/embed/W-Guk1ORv30?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Sector 9 Go Skate Day Live Sneak Peak">
+												<img src="images/videothumbs/events/event1.jpg" /><strong>Sector 9 Go Skate Day Live Sneak Peak</strong>
+											</a>
+											106 views | 9 months ago
+										</li>
+										
+										
+										</ul>
+								</div>
+							</dd>
+						<dt class="clicker">Promotional: Win It Wednesday</dt>
+								<dd style="display: none;" class="abs"> 
+									<div class="vidcat">
+								<b>Win It Wednesday:</b> This was the longest running video series that required a two day turn around to write up, film and edit each video. These videos demonstrate the flexibility and creativity of the video marketing team to consistently churn out entertaining content. Also below is the <a href="http://www.youtube.com/embed/yW9NVXHCwhw?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Shaka'd: Swell Order A Day Give-A-Way">SHAKA</a> promotional video that encouraged customer engagement.   
+										<br /><br/>
+										<ul>
+											<li>
+												<a href="http://www.youtube.com/embed/2DjSVJPnz8s?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Win It Wednesday: Raen Squire Sunglasses &quot;Church&quot; by Warren Smith">
+													<img src="images/videothumbs/wiw/wiw1.jpg" /><strong>Win It Wednesday: Raen Squire Sunglasses "Churc...</strong>
+												</a>
+												253 views | 9 months ago
+											<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/PifQ2OKk1JI?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Win It Wednesday Raen Squire Sunglasses - SWELL">
+													<img src="images/videothumbs/wiw/wiw2.jpg" /><strong>Win It Wednesday Raen Squire Sunglasses - SWELL</strong>
+												</a>
+												593 views | 11 months ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/meszB2H_dnM?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Win It Wednesday: Electric's Captain Ahab Sunglasses / Launch Party Footage on a Boat">
+													<img src="images/videothumbs/wiw/wiw3.jpg" /><strong>Win It Wednesday: Electric's Captain Ahab Sungl...</strong>
+												</a>
+												762 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/S2qyFqdCGUk?autoplay=1&wmode=opaque" rel="fav" class="fancybox fancybox.iframe" title="Win It Wednesday: Ambig Fish Fry Tank &amp; Any Two Tees">
+													<img src="images/videothumbs/wiw/wiw4.jpg" /><strong>Win It Wednesday: Ambig Fish Fry Tank &amp; Any Two...</strong>
+												</a>
+												281 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/O5ZZUXjlMfM?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Win It Wednesday: Iron and Resin">
+												<img src="images/videothumbs/wiw/wiw5.jpg" /><strong>Win It Wednesday: Iron and Resin</strong></a>
+												989 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/DqH6TwfFb0U?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Win It Wednesday: O'Neill John John Boardshort">
+													<img src="images/videothumbs/wiw/wiw6.jpg" /><strong>Win It Wednesday: O'Neill John John Boardshort</strong>
+												</a>
+												244 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/Wd4I2XfAQac?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe"  title="Win It Wednesday: Captain Fin Company">
+													<img src="images/videothumbs/wiw/wiw7.jpg" /><strong>Win It Wednesday: Captain Fin Company</strong>
+												</a>
+												593 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/2G7qZHiE2R4?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe"  title="Win it Wednesday: Volcom Hybrid Clothing">
+													<img src="images/videothumbs/wiw/wiw8.jpg" /><strong>Win it Wednesday: Volcom Hybrid Clothing</strong>
+												</a>
+												316 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/tilipRm7xcU?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Win It Wednesday: Imperial Motion Movember Package">
+													<img src="images/videothumbs/wiw/wiw9.jpg" /><strong>Win It Wednesday: Imperial Motion Movember Package</strong>
+												</a>
+												222 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/faxBNJpe5bw?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Win It Wednesday Teaser with GT from Vonzipper">
+													<img src="images/videothumbs/wiw/wiw10.jpg" /><strong>Win It Wednesday Teaser with GT from Vonzipper</strong>
+												</a>
+												73 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/JXNqLgS9ZvE?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Win It Wednesday - Autonomous Hoody">
+												<img src="images/videothumbs/wiw/wiw11.jpg" /><strong>Win It Wednesday - Autonomous Hoody</strong></a>
+												186 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/goXShirIfkM?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Win It Wednesday: Stache Sunglasses from VZ">
+													<img src="images/videothumbs/wiw/wiw12.jpg" /><strong>Win It Wednesday: Stache Sunglasses from VZ</strong>
+												</a>
+												248 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/WvooYtY6sFY?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Win It Wednesday: Brixton Ruger Jacket">
+													<img src="images/videothumbs/wiw/wiw13.jpg" /><strong>Win It Wednesday: Brixton Ruger Jacket</strong>
+												</a>
+												383 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/SVN1cm1GE3c?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Win It Wednesday: Spitfire MP3 Player, Headphones, &amp; Glasses">
+													<img src="images/videothumbs/wiw/wiw14.jpg" /><strong>Win It Wednesday: Spitfire MP3 Player, Headphon...</strong>
+												</a>
+												545 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/Dv29gpoV2Ng?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Win It Wednesday: Three Green Hearts Feather Hair Clips">
+													<img src="images/videothumbs/wiw/wiw15.jpg" /><strong>Win It Wednesday: Three Green Hearts Feather Ha...</strong>
+												</a>
+												295 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/1O4rGUzZc-o?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Win It Wednesday: Tavik Jammy Pack">
+												<img src="images/videothumbs/wiw/wiw16.jpg" /><strong>Win It Wednesday: Tavik Jammy Pack</strong></a>
+												185 views | 1 year ago
+												<br /> <br />
+											</li>
+											<li>
+												<a href="http://www.youtube.com/embed/yW9NVXHCwhw?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Shaka'd: Swell Order A Day Give-A-Way">
+													<img src="images/videothumbs/wiw/shaka.jpg" /><strong>Shaka'd: Swell Order A Day Give-A-Way</strong>
+												</a>
+												6,960 views | 2 years ago
+												<br /> <br />
+											</li>
+
+											</ul>
+											
+									</div>
+								</dd>
+						<dt class="clicker">Entertainment</dt>
+							<dd style="display: none;" class="abs"> 
+							
+								<div class="vidcat">
+								<b>Entertainment:</b> These were a fun way to personalize the company and add original, sharable content to the social media channels. These were all filmed and edited in my spare time.
+								<br /><br />
+									<ul>
+										<li>
+											<a href="http://www.youtube.com/embed/sL42ApbMjBU?autoplay=1&wmode=opaque" rel="fav"  class="fancybox fancybox.iframe" title="Free Diving Underwater Caves in Southern California - SWELL">
+												<img src="images/videothumbs/entertainment/entertain1.jpg" />Free Diving Underwater Caves in Southern Califo...
+											</a>
+											5,364 views | 2 years ago
+										</li>
+										<br /><br />
+										<li>
+											<a href="http://www.youtube.com/embed/mt8LT7esD7s?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="GoPro HD - Big Surf in the Giggle Crack  - Laguna Beach">
+												<img src="images/videothumbs/entertainment/entertain5.jpg" />GoPro HD - Big Surf in the Giggle Crack - Lagu...
+											</a>
+											661 views | 1 year ago
+										</li>
+										<br /><br />
+										<li>
+											<a href="http://www.youtube.com/embed/S4cQN2qhYZE?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="SWELL FAN-tasy Surfer Challenge: Episode 2">
+												<img src="images/videothumbs/entertainment/entertain4.jpg" /><strong>SWELL FAN-tasy Surfer Challenge: Episode 2</strong>
+											</a>
+											483 views | 1 year ago
+										</li>
+										<br /><br />
+										<li>
+											<a href="http://www.youtube.com/embed/uv7szjpLCsM?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="SWELL FAN-tasy Surfer Challenge: Episode 1">
+												<img src="images/videothumbs/entertainment/entertain3.jpg" /><strong>SWELL FAN-tasy Surfer Challenge: Episode 1</strong>
+											</a>
+											483 views | 1 year ago
+										</li>
+										<br /><br />
+										<li>
+											<a href="http://www.youtube.com/embed/qrg6XIUNK3Q?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="SWELL Presents Jeff Divine">
+											<img src="images/videothumbs/entertainment/entertain6.jpg" /><strong>SWELL Presents Jeff Divine</strong></a>
+											288 views | 2 years ago
+											</li>
+									</ul>
+										
+										
+								</div>
+								</dd>		
+								
+						<dt class="clicker">Product Videos</dt>
+							<dd style="display: none;" class="abs"> 
+								<div class="vidcat">
+									<b>Product Videos:</b> Similar to the How-To videos the Product videos were meant to lure in customers searching online for various products. Additionally these videos supplemented product descriptions when video embedding was eventually added to the website. 
+									<br /><br />
+									<ul>
+										<li>
+											<a href="http://www.youtube.com/embed/oT-IDFWrijw?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Best Surf Bag - Dakine Section Wet/ Dry Bag 2012 - Available at SWELL">
+												<img src="images/videothumbs/prodvidd/prod3.jpg" /><strong>Best Surf Bag - Dakine Section Wet/ Dry Bag 201...</strong>
+											</a>
+											3,579 views | 1 year ago
+												<br /><br />
+										</li>
+										<li>
+											<a href="http://www.youtube.com/embed/ci-13h2AGRo?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="First Look at Rip Curl's New Flash Dry Wetsuit - SWELL">
+												<img src="images/videothumbs/prodvidd/prod10.jpg" /><strong>First Look at Rip Curl's New Flash Dry Wetsuit ...</strong>
+											</a>
+											2,520 views | 1 year ag
+											<br /><br />
+										</li>
+										<li>
+											<a href="http://www.youtube.com/embed/kbSlHUdue6g?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Penny Skateboards: Now Available at SWELL!">
+												<img src="images/videothumbs/prodvidd/prod2.jpg" /><strong>Penny Skateboards: Now Available at SWELL!</strong>
+											</a>
+											2,369 views | 1 year ago
+												<br /><br />
+										</li>
+										<li>
+											<a href="http://www.youtube.com/embed/DksXfsDBZm8?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="Behind The Brand: Roark Revival">
+											<img src="images/videothumbs/prodvidd/prod8.jpg" /><strong>Behind The Brand: Roark Revival</strong></a>
+											942 views | 1 year ago
+												<br /><br />
+										</li>
+										<li>
+											<a href="http://www.youtube.com/embed/XuRTQ2D4P0k?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Behind The Brand: AMBSN Clothing">
+											<img src="images/videothumbs/prodvidd/prod7.jpg" /><strong>Behind The Brand: AMBSN Clothing</strong></a>
+											901 views | 1 year ago
+												<br /><br />
+										</li>
+										
+										<li>
+											<a href="http://www.youtube.com/embed/36UErtxRHLY?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="How Tough Is The GoPro?">
+											<img src="images/videothumbs/prodvidd/prod9.jpg" /><strong>How Tough Is The GoPro?</strong></a>
+											725 views | 1 year ago
+												<br /><br />
+										</li>
+										<li>
+											<a href="http://www.youtube.com/embed/pFXusdcTStw?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Roark -Chupacabra Boardshorts">
+											<img src="images/videothumbs/prodvidd/prod1.jpg" /><strong>Roark -Chupacabra Boardshorts</strong></a>
+											204 views | 11 months ago
+												<br /><br />
+										</li>
+										
+										
+										<li>
+											<a href="http://www.youtube.com/embed/NpD9M4o-x-8?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="FCS RATCHET TOOL - SWELL Showcase">
+											<img src="images/videothumbs/prodvidd/prod4.jpg" /><strong>FCS RATCHET TOOL - SWELL Showcase</strong></a>
+											240 views | 1 year ago
+												<br /><br />
+										</li>
+										<li>
+											<a href="http://www.youtube.com/embed/8n-aYVgSgXk?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="CAPTAIN FIN X SUMMER TEETH: DANE FIN - SWELL Showcase">
+												<img src="images/videothumbs/prodvidd/prod5.jpg" /><strong>CAPTAIN FIN X SUMMER TEETH: DANE FIN - SWELL Sh...</strong>
+											</a>
+											653 views | 1 year ago
+												<br /><br />
+										</li>
+										<li>
+											<a href="http://www.youtube.com/embed/7BbTCDfc9sQ?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="XCEL Drylock Wetsuit 2011 Available at SWELL">
+												<img src="images/videothumbs/prodvidd/prod6.jpg" /><strong>XCEL Drylock Wetsuit 2011 Available at SWELL</strong>
+											</a>
+											402 views | 1 year ago
+												<br /><br />
+										</li>
+										
+										
+										</ul>
+								</div>
+							</dd>
+							
+						<dt class="clicker">7 Days on the 7 Miracle Mile</dt>
+								
+								<dd style="display: none;" class="abs"> 
+								<div class="vidcat">
+								<b>7 Days on the 7 Miracle Mile:</b> All of these videos were shot, edited, and uploaded remotely over a 5 day trip to Oahu. The Intro/Outro was also designed and animated by me to give the videos a cohesive theme. 
+								This was an ambitious undertaking that required several sleepless nights due to immediacy of the events and the time lag between Oahu and the Mainland US. 
+								<br /><br />
+								<ul>
+									<li>
+										<a href="http://www.youtube.com/embed/70_3N0QMFMU?autoplay=1&wmode=opaque" rel="fav"  class="fancybox fancybox.iframe"
+											title="River Surfing Waimea &amp; Cave Diving - How to Take Advantage of a Flat Day on the North Shore">
+											<img src="images/videothumbs/7days/7day5.jpg" /><strong>River Surfing Waimea &amp; Cave Diving - How to Tak...</strong>
+										</a>
+										1,336 views | 1 year ago
+										<br /><br />
+									</li>
+									<li>
+										<a href="http://www.youtube.com/embed/miZipciu8Yc?autoplay=1&wmode=opaque" rel="fav"  class="fancybox fancybox.iframe" title="Pipemasters 2011: Biggest Rides of Round One">
+											<img src="images/videothumbs/7days/7day2.jpg" /><strong>Pipemasters 2011: Biggest Rides of Round One</strong>
+										</a>
+										2,051 views | 1 year ago
+										<br /><br />
+									</li>
+									<li>
+										<a href="http://www.youtube.com/embed/EU6vPzYDf8c?autoplay=1&wmode=opaque" class="fancybox fancybox.iframe" title="WaveJet Surfboards: SWELL'S North Shore Demo">
+											<img src="images/videothumbs/7days/7day1.jpg" /><strong>WaveJet Surfboards: SWELL'S North Shore Demo</strong>
+										</a>
+										8,125 views | 1 year ago
+										<br /><br />
+									</li>
+									
+									<li>
+										<a href="http://www.youtube.com/embed/yH9410A_mLo?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Best Food on the North Shore - Opal Thai - Haleiwa, Hi">
+											<img src="images/videothumbs/7days/7day3.jpg" /><strong>Best Food on the North Shore - Opal Thai - Hale...</strong>
+										</a>
+										1,128 views | 1 year ago
+										<br /><br />
+									</li>
+									<li>
+										<a href="http://www.youtube.com/embed/_uRegLwOI9s?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Spangler Eats SPAM in Honolulu">
+										<img src="images/videothumbs/7days/7day4.jpg" /><strong>Spangler Eats SPAM in Honolulu</strong></a>
+										106 views | 1 year ago
+										<br /><br />
+									</li>
+									
+									<li>
+										<a href="http://www.youtube.com/embed/ObXYPDzHKQM?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Live from The North Shore: Win It Wednesday Pipeline Book">
+											<img src="images/videothumbs/7days/7day6.jpg" /><strong>Live from The North Shore: Win It Wednesday Pip...</strong>
+										</a>
+										96 views | 1 year ago
+									</li>
+									<br /><br />
+									<li>
+										<a href="http://www.youtube.com/embed/JLiFVr5QigQ?autoplay=1&wmode=opaque"  class="fancybox fancybox.iframe" title="Jack Johnson Performs at Surfrider Awards in Waimea Bay">
+											<img src="images/videothumbs/7days/7day7.jpg" /><strong>Jack Johnson Performs at Surfrider Awards in Wa...</strong>
+										</a>
+										706 views | 1 year ago
+									</li>
+									</ul>
+								</div>
+								</dd>
+								</dl>
+				</div>
+				</div>
+				<br /><br />
+				<div id="spacer">
+				<span id="bolded1">INSTAGRAM: </span> +<br /><br />
+											<div id ="toggle">
+							<script src="jbcore/juicebox.js"></script>
+							<script>
+							new juicebox({
+							containerId : "juicebox-container",
+							galleryWidth: "100%",
+							galleryHeight: "840px",
+							backgroundColor: "rgba(255,255,255,1)"
+							});
+							</script>
+							<div id="juicebox-container"></div>
+							<!--END JUICEBOX EMBED-->
+							In early December 2011, before most businesses began thinking about the now popular social media app, I started and ran the Instagram account for SWELL. Early on I recognized the relevance of the service and used my own images, hashtags and geotagged locations to grow the service to over 4000 followers on my own. Today the account has surpassed the SWELL twitter account in followers and active users. Above are select photos from the account all taken with an iPhone 4S.
+				</div>	
+				</div></div>
+				<span id="toppers"><a href="#main_header" class="scroll">top</a></span>
+				
+									<header><h1><img src="images/mp.png" id="other"/> OTHER PROJECTS</h1></header>
+									<a href="#other" class="phren"></a>
+				<div class="sectional">Well rounded? You bet! Aside from working on a handful of other online storefronts, I have also created posters, coupons, coozies, flyers and even a <span id="extralink"> <a href="http://morgantheplant.com/random/billygame/index.html" class="fancybox fancybox.iframe" title="Get Billy to the Beach">mini flash video game</a></span> for SWELL. I have been fortunate enough to work in many different positions and on many different projects at SWELL. This fun and exciting atmosphere keeps me on my toes and eager to head into work every morning. 
+					<br /><br />
+					<img src="images/dont-hate-the-web.png" alt="Don't Hate The Web logo" id="dhw"/>In 2011 my <a href="http://nolantheplant.com/" target="_blank" class="inpage">brother</a> and I founded <b>Don’t Hate the Web</b>. We provide digital strategy consultation to small businesses and start ups. 
+					With an easy to remember domain and great word of mouth reputation, we have been able to help many businesses improve their online presence and launch successful digital campaigns.
+					Check it out at: <a href="http://www.donthatetheweb.com/" target="_blank" class="inpage">donthatetheweb.com</a>
+
+
+				</div><span id="toppers"><a href="#main_header" class="scroll">top</a></span>
+				<div class="sectional">
+										<p>	<header><h1><img src="images/mp.png" id="contact"/> CONTACT</h1></header>
+							<img src="images/businesscard.png" alt="Morgan's Contact" id="ecard" />				
+							<form name="contactform" method="post" action="send_form_email.php">
+<table width="365px">
+<tr>
+ <td valign="top">
+  <label for="first_name">First Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label for="last_name">Last Name *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email *</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Number</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Message *</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="5000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit"> 
+ </td>
+</tr>
+</table>
+</form>
+
+</p>
+				</div>
+				
+				<span id="toppers"><a href="#main_header" class="scroll">top</a></span>
+</article>
+		</section>
+		
+		<footer id="main_footer">
+			<a href="#contact" onclick="window.open('https://www.sitelock.com/verify.php?site=morgantheplant.com','SiteLock','width=600,height=600,left=160,top=170');" ><img id="sitelock" alt="website security" title="SiteLock"  src="//shield.sitelock.com/shield/morgantheplant.com"/></a>
+		<br />Website Created by Morgan with HTML5 & CSS3 
+		</footer>
+		</div>
+    </body>
+</html>

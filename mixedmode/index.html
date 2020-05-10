@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html ng-app="famoUniApp">
+
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+  <link rel="stylesheet" href="./styles/style.css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-sanitize.min.js"></script>
+  
+</head>
+
+<body ng-controller="mainController"> 
+
+<div >
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <img id="titlelogo" src="./assets/famous_logo.svg"/>
+        <a id="headernav" class="navbar-brand" href="/">Famo.us Mixed Mode <i>demo</i></a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a id="home" href="#"><i class="fa fa-home"></i> Home</a></li>
+        <li><a id="contact" href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+    <div class="col-sm-3"><div class="textContainer"><div id="textInnerContainer"><div class="textMainArea">
+   <div ng-view></div></div>	
+    </div></div>
+    <div class="slideButtons" >
+<button id="prev" class="btn" ng-click="prevSlide()">Prev</button><button id="next" class="btn" ng-click="nextSlide()">Next</button>
+</div>
+    </div>
+    <div class="col-sm-5">
+      <pre id="editor">
+      
+      
+      </pre>
+    </div>
+    <div class="col-sm-4"><iframe  id="stage" ng-src="{{ bundle() }}" ></iframe></div>
+  <div></div>
+  </div>
+  </div>
+ </div>
+
+  <footer></footer>
+    
+<script src="editor/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./scripts.js"></script>
+</body>
+
+</html>

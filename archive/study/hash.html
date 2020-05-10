@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test Editor</title>
+	<style type="text/css" media="screen">
+	  body {
+	      overflow: hidden;
+	  }
+
+	  #editor {
+	      margin: 0;
+	      position: absolute;
+	      top: 0;
+	      bottom: 0;
+	      left: 0;
+	      right: 0;
+	  }
+	</style>
+</head>
+<body>
+<pre id="editor">
+
+var makeHashTable = function() {
+  //Do not change the max!
+  var max = 4;
+
+  return {
+    _storage: [],
+    retrieve: function(key) {
+    	//hashed key bucket
+      return this._storage[hashFn(key, max)];
+    },
+
+    insert: function(key, value) {
+      
+      var bucket = this._storage[this.retreive(key)]; 
+      
+      if(bucket===undefined) {
+      	bucket = [];
+      }
+
+      var found = false; 
+
+      for(var i = 0; i < bucket.length; i++) {
+      	var tuple = bucket[i];
+        if(tuple[0]===key) {
+        	tuple[1] = value;
+        	found = true;
+        	break;
+        }
+
+      }
+
+      if(!found) {
+      	bucket.push([key,value]);
+      }
+
+    }
+
+  };
+};
+
+// This is a "hashing function". You don't need to worry about it, just use it to turn any key into a pseudo-random key
+var hashFn = function(str, max) {
+  var hash = 0;
+  for (var i = 0; i < str.length; i++) {
+    var letter = str[i];
+    hash = (hash << 5) + letter.charCodeAt(0);
+    hash = (hash & hash) % max;
+  }
+  return hash;
+};
+
+
+
+
+
+</pre>
+
+<script src="src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/twilight");
+    editor.getSession().setMode("ace/mode/javascript");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>MORGAN PLANT | 2013 PROJECTS</title>
+        <meta name="description" content="Morgan Plant's digital portfolio">
+        <meta name="viewport" content="width=device-width">
+<link rel="icon" 
+
+      type="image/png" 
+      href="../images/faviconmp.png">
+
+		<LINK REL="SHORTCUT ICON" HREF="../images/favicon.ico" /> 
+        <link rel="stylesheet" href="../stylenew.css">
+ 		<link href='http://fonts.googleapis.com/css?family=Hammersmith+One|Oswald|Open+Sans' rel='stylesheet' type='text/css'>
+
+    </head> 
+<body id="otherpages">	
+	  <div id="wrapsku">
+	  <aside id="top_contact">
+				<div id="sku_contact"><ul>
+				<li><a href="http://www.linkedin.com/pub/morgan-plant/4b/431/34" title="Add me on Linked In!" class="linkedin"><!--<img src="images/linkedin.png" alt="Linked In" id="linkedinicon" />--></a></li>
+				<li><span class="emailme"><a href="http://morgantheplant.com/#contact" title="Contact Me!" class="scroll"></a></span> <!--<img src="images/email.png" alt="Email Morgan" id="emailicon" />--></li>
+				</ul></div>
+			</aside>
+		  <header id="main_header">
+				<div id="skutitle">
+				<ul>
+					<li><a href="http://morgantheplant.com" id="hometitle"><img src="../images/mpbig.png" alt="Morgan Plant" class="mp" /></li>
+					<li><h1 class="title">MORGAN PLANT</h1></li></ul></a>
+				<img src="../images/hr.png" id="hr_sku" alt="line!" />
+				<div id="notab">NOTABLE 2013 PROJECTS</div>
+			</header>
+			
+			
+					<h1 id="skuheader">THE BEST SELLER WORKSHEET</h1>
+					<div id="nav_buttons">
+					<ul>
+					<li><a href="http://morgantheplant.com/skuexploder/" class="pgnav" ></a></li>
+					<li><a href="http://morgantheplant.com/bestsellerws" id="pgnav_active"></a></li>
+					<li><a href="http://morgantheplant.com/imagegrabber/" class="pgnav"></a></li>
+					<li><a href="http://morgantheplant.com/stockmodels/" class="pgnav"></a></li>
+					<li><a href="http://morgantheplant.com/autotemplates/" class="pgnav"></a></li>
+					</ul>
+					</div>
+					<br />
+					<b>Problem solved</b> – <i>Sifts through 60K+ rows of data, extracts sales info and ranks "Best Sellers" by class.</i><br /><br />
+					<img src="../images/best sellers.jpg" id="bestsellers" alt="Best Sellers" />
+			
+					<div class="skuarticle"><p id ="skumaintext">
+					<b>ABOUT:</b> After building the <a href="http://morgantheplant.com/skuexploder/">SKU EXPLODER</a> I decided to find other ways to make myself 
+					more efficient at work. One particularly grueling task was pulling together our "Best Sellers" 
+					lists at the beginning of each week. Even with conditional formatting and a number of other tricks 
+					this would still take each of us several hours for weekly reports and sometimes the entire day for the month end recaps. 
+					This worksheet helped me reduce that time significantly and build more accurate reports for all of my assigned categories.
+					<br /><br />
+					
+					
+					<span id="other"><b>FORMAT:</b> Each week two sales reports (Reg price and Outlet) are exported from Ecometry as Excel files with 60K lines of sales data each. Since the files are so big and accessed via our local network, 
+					I built the Best Sellers Worksheet to update with a copy and paste instead of linking to an external worksheet. This helps speed up the calculations and prevents Excel from crashing when changing class or category info. <br /><br /> 
+					<img src="../images/Formulaedit.jpg" id="bestsellers" alt="Best Sellers" /><br /><br />
+					 The reg price Weekly Sales Report is pasted into a special tab 
+					in columns A – V. In the next column over, <b>column W</b>, a function checks 
+					if the class from the TOTAL Style (the pivot total for each color ie. <b>TOTAL Style+C: A3<span id="red">M 01 03</span>FLM YE</b>) matches 
+					the class listed on the Best Seller table (<span id="red">M 01 03</span> in image above) and displays it if it does. In the next two <b>columns X and Y</b>, if column W has a SKU
+					listed (checks if length is > 1 character), then the total units sold for the week and 
+					total retail sales are also listed. 
+					<br /><br /> 
+					Then, based on what’s displayed in 
+					columns W-Y (numbered <span id="red">1-3</span> in the image below) an array formula ranks, matches, and lists the top 15 SKUs 
+					for Past Week Total Units Sold and Past Week Total Sales in 2 separate tables. Additional SKU info (description, on hand units, etc.) is then added to the left of these tables using a simple VLOOKUP to columns A-V.<br /><br />
+					<img src="../images/123formula.jpg" id="bestsellers" alt="Best Sellers" />
+					<br /><br />
+					In order to limit re-typing data, the info from the Best sellers tables are then re-listed on a separate tab in the traditional format of the Best Sellers Report.<br /><br /> 
+		
+					<img src="../images/final report.jpg" id="bestsellers" alt="Best Sellers" />
+					<br /><br />The final result above lists the top 10 styles in the following format (see image and below):<br /><br />
+					<ol id="listed">
+					<li><span id="red">Category</span> - This Data validated cell can be changed and will update all class info in the worksheet based on this cell.</li>
+					<li><span id="red">Override feature</span> - This was added so you can "skip" certain styles (GWP's or on consignemnet goods) or rank top ten by either sales or units. Both Best seller tables list top 15 styles to help compensate with additional info if a style is skipped.</li>
+					<li><span id="red">Description</span> - Pulled from the best seller table and uses a function to trim off last word to eliminate color.</li>
+					<li><span id="red">Image area</span> - This is where an image is placed. Often used in conjunction with the <a href="http://morgantheplant.com/imagegrabber/">IMAGE GRABBER</a>.</li>
+					<li><span id="red">Sales info</span> - Simple concatenation and calculation for WOS based on Best Seller table info.</li>
+					<li><span id="red">Color</span> - Found on SKU and looked up against a color table.</li>
+					</ol>
+					<br />
+					</span>
+					</div> 
+					</p>
+					<div class="skuarticle"><i>Even though this sheet was eventually replaced by a more robust 
+					pivot table based report, it was very useful in the interim. I had a lot of fun building it and learned a lot that I later incorporated into my other worksheets.
+					</i></div>
+
+
+<br /><br />
+
+
+					
+					<a href="http://www.morgantheplant.com" class="morgmail"alt="Click Here to Go Back!"></a>
+					<br /><span id="toppersku"><a href="http://morgantheplant.com" class="">Go Back to my Home Page</a></span>
+<br /><br />
+<footer id="main_footer">
+			<a href="http://www.morgantheplant.com/#contact" onclick="window.open('https://www.sitelock.com/verify.php?site=morgantheplant.com','SiteLock','width=600,height=600,left=160,top=170');" >
+			<img id="sitelock" alt="website security" title="SiteLock"  src="//shield.sitelock.com/shield/morgantheplant.com"/></a>
+		<br />Website Created by Morgan with HTML5 & CSS3 
+		</footer>
+</div>
+ </body>

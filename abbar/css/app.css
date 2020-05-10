@@ -1,0 +1,94 @@
+html{
+    background-color: #F0F0F0;
+}
+
+.nav-container::-webkit-scrollbar { 
+    display: none; 
+}
+
+.nav-container {
+    position: absolute;
+    top: 5px;
+    left: -45px;
+    height: 150px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-transform: rotate(-30deg);
+        -ms-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+    -webkit-overflow-scrolling: touch;
+}
+
+
+.nav-panel {
+    padding-left: 125px;
+    padding-right: 125px;
+    margin-top: 7px;
+    background-color: #F6F2F8;
+    box-shadow: 1px 1px 4px #898989;
+    height: 50px;
+    width: 200%;
+}
+
+.nav-item {
+    display:inline-block;
+    height:100px;
+    width:50px;
+    margin:5px;
+    -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+            transform: rotate(30deg);
+}
+
+.nav-btn-containter {
+    text-align: center;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+        -ms-flex-direction:column;
+            flex-direction:column;
+    -webkit-box-pack:center;
+    -webkit-justify-content:center;
+        -ms-flex-pack:center;
+            justify-content:center;
+    -webkit-box-align:center;
+    -webkit-align-items:center;
+        -ms-flex-align:center;
+            align-items:center;   
+    display: flex;    
+}
+
+.nav-btn-icon {
+    border-radius: 50%;
+    height:30px;
+    width:30px;
+    line-height: 30px;
+    font-weight:bold;
+}
+
+.nav-btn-vert-line {
+    height: 50px;
+    border-right: 1px solid gray;
+    width:0px;
+}
+
+@media (min-width: 400px) {
+  body {
+    width:400px;
+    background-color: yellow;
+  }
+
+}
+
+
+@media (max-width: 400px) {
+  body {
+    width:400px;
+    background-color: blue;
+  }
+
+}
